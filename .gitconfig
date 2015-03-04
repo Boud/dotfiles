@@ -1,7 +1,3 @@
-[filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
 [user]
 	name = Felix Yadomi
 	email = dev.yadomi@gmail.com
