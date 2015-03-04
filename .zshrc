@@ -26,5 +26,3 @@ fi
 # ------------------ ALIAS -----------------------
 source "$HOME/.scripts/my.alias"
 source "$HOME/.scripts/kontest.alias"
-
-alias nw=/Applications/nwjs.app/Contents/MacOS/nwjs
