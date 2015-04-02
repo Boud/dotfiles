@@ -1,3 +1,5 @@
+alias= ls='ls --color=auto'
+
 alias gl='git lg'
 alias gs='git status'
 alias gut='git'

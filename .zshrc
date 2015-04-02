@@ -26,3 +26,4 @@ fi
 # ------------------ ALIAS -----------------------
 source "$HOME/.scripts/my.alias"
 source "$HOME/.scripts/kontest.alias"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
