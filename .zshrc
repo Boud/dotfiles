@@ -23,7 +23,14 @@ else
   export EDITOR='subl -n'
 fi
 
+# RVM
+export PATH="$PATH:$HOME/.rvm/bin" 
+
+# Docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/yadomi/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
 # ------------------ ALIAS -----------------------
 source "$HOME/.scripts/my.alias"
 source "$HOME/.scripts/kontest.alias"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
