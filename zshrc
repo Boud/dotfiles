@@ -13,8 +13,11 @@ export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 # Homebrew binaries
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# Added by the Heroku Toolbelt
+export PATH="$PATH:/usr/local/heroku/bin"
+
+# RVM
+export PATH="$PATH:$HOME/.rvm/bin" 
 
 # ------------- Environement variables -----------
 if [[ -n $SSH_CONNECTION ]]; then
@@ -22,9 +25,6 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='subl -n'
 fi
-
-# RVM
-export PATH="$PATH:$HOME/.rvm/bin" 
 
 # Docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
