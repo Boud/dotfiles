@@ -23,7 +23,7 @@
 	status = auto
 	branch = auto
 [push]
-	default = upstream
+	default = simple
 [status]
 	showUntrackedFiles = all
 [color "branch"]
