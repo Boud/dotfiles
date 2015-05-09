@@ -19,6 +19,9 @@ export PATH="$PATH:/usr/local/heroku/bin"
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin" 
 
+# Personal executable scripts
+export PATH="$PATH:$HOME/.scripts/bin" 
+
 # ------------- Environement variables -----------
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vi'
