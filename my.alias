@@ -5,7 +5,6 @@ alias gs='git status'
 alias gut='git'
 alias giy='git'
 alias god='git'
-alias gti='git'
 
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias nw=/Applications/nwjs.app/Contents/MacOS/nwjs
