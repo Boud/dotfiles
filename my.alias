@@ -7,10 +7,11 @@ alias giy='git'
 alias god='git'
 
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias nw=/Applications/nwjs.app/Contents/MacOS/nwjs
+alias nw='/Applications/nwjs.app/Contents/MacOS/nwjs'
 alias vlc='/opt/homebrew-cask/Caskroom/vlc/2.1.5/VLC.app/Contents/MacOS/VLC'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 alias fuck='sudo $(fc -ln -1)'
+alias sha1='openssl sha1'
 
 export SUBL_CONFIG="/Users/yadomi/Library/Application Support/Sublime Text 3/Packages/User"
