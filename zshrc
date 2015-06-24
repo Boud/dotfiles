@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="eastwood"
 CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="true"
-plugins=(git npm node brew gulp)
+plugins=(git npm node brew gulp kontest)
 source $ZSH/oh-my-zsh.sh
 
 # -------------    PATH VARIABLE  ----------------
