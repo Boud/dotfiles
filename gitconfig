@@ -2,7 +2,7 @@
 	name = Felix Yadomi
 	email = dev.yadomi@gmail.com
 [core]
-	excludesfile = /Users/yadomi/.gitignore_global
+	excludesfile = /Users/yadomi/.gitignore
 	editor = subl -w -n
 	pager = less
 	autocrlf = input
