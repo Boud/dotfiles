@@ -17,10 +17,14 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$PATH:/usr/local/heroku/bin"
 
 # RVM
-export PATH="$PATH:$HOME/.rvm/bin" 
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# NVM
+export NVM_DIR="/Users/yadomi/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Personal executable scripts
-export PATH="$PATH:$HOME/.scripts/bin" 
+export PATH="$PATH:$HOME/.scripts/bin"
 
 # ------------- Environement variables -----------
 if [[ -n $SSH_CONNECTION ]]; then
