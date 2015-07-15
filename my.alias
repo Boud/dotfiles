@@ -14,4 +14,6 @@ alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias fuck='sudo $(fc -ln -1)'
 alias sha1='openssl sha1'
 
+alias node-es6="node --use-strict $(node --v8-options | grep harm | awk '{print $1}' | xargs)"
+
 export SUBL_CONFIG="/Users/yadomi/Library/Application Support/Sublime Text 3/Packages/User"
