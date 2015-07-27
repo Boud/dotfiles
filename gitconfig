@@ -7,10 +7,10 @@
 	pager = less
 	autocrlf = input
 [alias]
-	
+
 	# Enchenhancement
 	lg = log --abbrev-commit --pretty=tformat:'%Cred%h%Creset %C(yellow)%an%Creset %C(green)%ad%Creset %s %C(auto)%d%Creset%C(bold blue) (%ar) %Creset' --date=short
-	
+
 	# Features
 	jah = log --abbrev-commit --pretty=tformat:'%Cred%h%Creset %C(yellow)%an%Creset %C(green)%ad%Creset %s %C(auto)%d%Creset%C(bold blue) (%ar) %Creset' --date=short
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
