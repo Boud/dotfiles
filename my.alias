@@ -8,6 +8,8 @@ alias god='git'
 alias got='git'
 alias goat='git'
 alias 🐐='git'
+alias "🐐 🚀"='git push'
+
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias nw='/Applications/nwjs.app/Contents/MacOS/nwjs'
 alias vlc='/opt/homebrew-cask/Caskroom/vlc/2.1.5/VLC.app/Contents/MacOS/VLC'
