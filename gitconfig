@@ -6,6 +6,7 @@
 	editor = subl -w -n
 	pager = less
 	autocrlf = input
+	whitespace = cr-at-eol
 [alias]
 
 	# Enchenhancement
