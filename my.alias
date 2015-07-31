@@ -5,8 +5,8 @@ alias gs='git status'
 
 alias ga='git add .'
 
-for g in gut god giy god got goat 🐐 do
-  alias $g='git'
+for x in 'gut' 'god' 'giy' 'god' 'got' 'goat' '🐐' do
+  echo $x
 done
 
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
