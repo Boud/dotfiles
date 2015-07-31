@@ -5,9 +5,10 @@ alias gs='git status'
 
 alias ga='git add .'
 
-for x in 'gut' 'god' 'giy' 'god' 'got' 'goat' '🐐' do
-  echo $x
-done
+for g in 'gut' 'god' 'giy' 'god' 'got' 'goat' '🐐' 'gt'
+{
+  alias $g='git'
+}
 
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias nw='/Applications/nwjs.app/Contents/MacOS/nwjs'
