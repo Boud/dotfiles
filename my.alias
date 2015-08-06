@@ -10,7 +10,7 @@ for g in 'gut' 'god' 'giy' 'god' 'goat' '🐐' 'gt'
   alias $g='git'
 }
 
-alias got='afplay /usr/local/etc/got.mp3 & ; git'
+alias got='afplay /usr/local/etc/got.mp3 & ; cat /usr/local/etc/got.txt; git'
 
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias nw='/Applications/nwjs.app/Contents/MacOS/nwjs'
