@@ -18,7 +18,7 @@
 	undo="reset --soft HEAD^"
 	pr="!pr() { hub pull-request $@ ;}; pr"
 	amend= 'commit --amend'
-
+	when-merged='git-when-merged'
 	# TYPOS
 	comit='commit'
 	comi='commit'
