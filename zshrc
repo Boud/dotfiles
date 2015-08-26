@@ -23,6 +23,11 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export NVM_DIR="/Users/yadomi/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
+# Android SDK
+export PATH=$PATH:/usr/local/Cellar/android-sdk/latest/tools
+export PATH=$PATH:/usr/local/Cellar/android-sdk/latest/platform-tools
+export ANDROID_HOME=/usr/local/Cellar/android-sdk/latest
+
 # Personal executable scripts
 export PATH="$PATH:$HOME/.scripts/bin"
 
