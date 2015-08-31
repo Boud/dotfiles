@@ -1,0 +1,9 @@
+"*":
+  core:
+    disabledPackages: [ ]
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+  linter: {}
+  emmet: {}
+  minimap: {}
