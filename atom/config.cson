@@ -1,6 +1,10 @@
 "*":
   core:
-    disabledPackages: [ ]
+    disabledPackages: [
+      "metrics"
+      "exception-reporting"
+      "welcome"
+    ]
   editor:
     invisibles: {}
     scrollPastEnd: true
