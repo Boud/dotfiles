@@ -15,3 +15,6 @@
     showInvisibles: true
   linter: {}
   emmet: {}
+  tabs:
+    usePreviewTabs: true
+    enableVcsColoring: true
