@@ -12,9 +12,10 @@
     fontFamily: "Hack"
     preferredLineLength: 120
     showIndentGuide: true
-    showInvisibles: true
   linter: {}
   emmet: {}
   tabs:
     usePreviewTabs: true
     enableVcsColoring: true
+  "atom-beautify":
+    _analyticsUserId: "17aba8af-1231-4289-a5a0-4f6b9be9c2db"
