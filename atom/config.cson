@@ -4,6 +4,7 @@
       "metrics"
       "exception-reporting"
       "welcome"
+      "atom-autocomplete-php"
     ]
   editor:
     invisibles: {}
@@ -19,3 +20,5 @@
     enableVcsColoring: true
   "atom-beautify":
     _analyticsUserId: "17aba8af-1231-4289-a5a0-4f6b9be9c2db"
+  "atom-autocomplete-php": {}
+  "autocomplete-php": {}
