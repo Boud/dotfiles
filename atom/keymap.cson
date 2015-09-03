@@ -25,13 +25,16 @@
 # https://github.com/bevry/cson#what-is-cson
 
 'atom-text-editor[data-grammar="text html"]:not([mini])':
-    'tab': 'emmet:expand-abbreviation-with-tab'
+  'tab': 'emmet:expand-abbreviation-with-tab'
 
 'atom-text-editor':
-  'cmd-alt-W': 'tabs:close-all-tab'
+  'cmd-alt-w': 'tabs:close-all-tab'
 
 '.platform-darwin':
   'cmd-;': 'tree-view:toggle'
+
+'.platform-darwin':
+  'cmd-alt-r': 'tree-view:reveal-active-file'
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-:': 'editor:toggle-line-comments'
