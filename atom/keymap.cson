@@ -35,6 +35,3 @@
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-:': 'editor:toggle-line-comments'
-
-'.platform-darwin':
-  'ctrl-cmd-r': 'tree-view:reveal-active-file'

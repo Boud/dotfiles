@@ -10,6 +10,10 @@
       "atom-material-ui"
       "one-dark-syntax"
     ]
+    packagesWithKeymapsDisabled: [
+      "atom-material-ui"
+      "tabs"
+    ]
   editor:
     invisibles: {}
     scrollPastEnd: true
@@ -20,7 +24,6 @@
   linter: {}
   emmet: {}
   tabs:
-    usePreviewTabs: true
     enableVcsColoring: true
   "atom-beautify":
     _analyticsUserId: "17aba8af-1231-4289-a5a0-4f6b9be9c2db"
