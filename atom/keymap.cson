@@ -28,7 +28,7 @@
     'tab': 'emmet:expand-abbreviation-with-tab'
 
 'atom-text-editor':
-  'cmd-shift-W': 'tabs:close-all-tab'
+  'cmd-alt-W': 'tabs:close-all-tab'
 
 '.platform-darwin':
   'cmd-;': 'tree-view:toggle'

@@ -6,6 +6,10 @@
       "welcome"
       "atom-autocomplete-php"
     ]
+    themes: [
+      "atom-material-ui"
+      "one-dark-syntax"
+    ]
   editor:
     invisibles: {}
     scrollPastEnd: true
