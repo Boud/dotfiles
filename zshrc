@@ -26,7 +26,7 @@ export NVM_DIR="/Users/yadomi/.nvm"
 # Android SDK
 export PATH=$PATH:$HOME/.opt/android-sdk/tools
 export PATH=$PATH:$HOME/.opt/android-sdk/platform-tools
-export ANDROID_HOME=/usr/local/Cellar/android-sdk/latest
+export ANDROID_HOME=$HOME/.opt/android-sdk/
 
 # Personal executable scripts
 export PATH="$PATH:$HOME/.scripts/bin"
