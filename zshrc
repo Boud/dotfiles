@@ -11,7 +11,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 # Homebrew binaries
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/sbin:$PATH
 
 # Added by the Heroku Toolbelt
 export PATH="$PATH:/usr/local/heroku/bin"
