@@ -2,7 +2,7 @@ alias ls='ls --group-directories-first --color=auto'
 
 alias gl='git lg'
 alias gs='git status'
-
+alias gc='git commit'
 alias ga='git add .'
 
 for g in 'gut' 'god' 'giy' 'god' 'goat' '🐐' 'gt'
