@@ -19,6 +19,6 @@ alias vlc='/opt/homebrew-cask/Caskroom/vlc/2.1.5/VLC.app/Contents/MacOS/VLC'
 alias fuck='sudo $(fc -ln -1)'
 alias sha1='openssl sha1'
 
-alias node-es6="node --use-strict $(node --v8-options | grep harm | awk '{print $1}' | xargs)"
+alias eslint-local="./node_modules/eslint/bin/eslint.js"
 
 export SUBL_CONFIG="/Users/yadomi/Library/Application Support/Sublime Text 3/Packages/User"
