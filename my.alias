@@ -24,4 +24,6 @@ alias sha1='openssl sha1'
 
 alias eslint-local="./node_modules/eslint/bin/eslint.js"
 
+alias adbpicture='PIC="/sdcard/DCIM/Camera/IMG_$(date +"%Y%m%d")*" ; adb shell "input tap 540 1720" && adb shell "ls -d $(echo $PIC)" | tr "\r" " " | xargs -n1 adb pull && adb shell "rm $(echo $PIC)"'
+
 export SUBL_CONFIG="/Users/yadomi/Library/Application Support/Sublime Text 3/Packages/User"
