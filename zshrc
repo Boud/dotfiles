@@ -47,6 +47,6 @@ export DOCKER_MACHINE_NAME="default"
 
 # ------------------ ALIAS -----------------------
 source "$HOME/.scripts/my.alias"
-source "$HOME/.scripts/kontest.alias"
+source "$HOME/.scripts/krashstudio.alias"
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
