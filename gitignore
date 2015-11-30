@@ -5,3 +5,6 @@
 .LSOverride
 Icon
 ._*
+
+*.sublime-workspace
+*.sublime-project
