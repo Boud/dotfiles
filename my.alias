@@ -28,5 +28,14 @@ alias eslint-local="./node_modules/eslint/bin/eslint.js"
 # Android
 alias adbpicture='PIC="/sdcard/DCIM/Camera/IMG_$(date +"%Y%m%d")*" ; adb shell "input tap 540 1720" && sleep 1.5s && adb shell "ls -d $(echo $PIC)" | tr "\r" " " | xargs -n1 adb pull && adb shell "rm $(echo $PIC)"'
 
+# Pushbullet
+function pushbullet() {
+  MESSAGE=$(cat)
+  curl -u $(cat ~/.pushbullet_apikey): \
+    -X POST https://api.pushbullet.com/v2/pushes \
+    --header 'Content-Type: application/json' \
+    --data-binary '{"type": "note", "title": "Terminal", "body": "'"$MESSAGE"'"}'
+}
+
 # Sublime Text
 export SUBL_CONFIG="/Users/yadomi/Library/Application Support/Sublime Text 3/Packages/User"
