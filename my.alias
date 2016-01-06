@@ -15,6 +15,7 @@ alias gl='git lg'
 alias gs='git status'
 alias gc='git commit'
 alias ga='git add .'
+alias gds='git diff --staged'
 
 for g in 'gut' 'god' 'giy' 'god' 'goat' '🐐' 'gt'
 {
