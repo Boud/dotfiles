@@ -50,3 +50,6 @@ source "$HOME/.scripts/my.alias"
 source "$HOME/.scripts/krashstudio.alias"
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
+# added by travis gem
+[ -f /Users/yadomi/.travis/travis.sh ] && source /Users/yadomi/.travis/travis.sh
