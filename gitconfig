@@ -12,7 +12,6 @@
 	# Enchenhancement
 	lg = log --abbrev-commit --pretty=tformat:'%Cred%h%Creset %C(yellow)%an%Creset %C(green)%ad%Creset %s %C(auto)%d%Creset%C(bold blue) (%ar) %Creset' --date=short
   cp = cherry-pick
-  diff = "!git diff --color $@ | diff-so-fancy"
 
 	# Features
 	jah = log --abbrev-commit --pretty=tformat:'%Cred%h%Creset %C(yellow)%an%Creset %C(green)%ad%Creset %s %C(auto)%d%Creset%C(bold blue) (%ar) %Creset' --date=short
@@ -52,6 +51,9 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
