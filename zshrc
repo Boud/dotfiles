@@ -51,3 +51,6 @@ export DOCKER_MACHINE_NAME="default"
 # ------------------ ALIAS -----------------------
 source "$HOME/.scripts/my.alias"
 source "$HOME/.scripts/krashstudio.alias"
+
+# Z
+. /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
