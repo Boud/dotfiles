@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="eastwood"
 CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="true"
-plugins=(git npm node brew gulp ktst)
+plugins=(git npm node brew gulp ktst z)
 source $ZSH/oh-my-zsh.sh
 
 # iTerm2 Shell Integration
@@ -51,6 +51,3 @@ export DOCKER_MACHINE_NAME="default"
 # ------------------ ALIAS -----------------------
 source "$HOME/.scripts/my.alias"
 source "$HOME/.scripts/krashstudio.alias"
-
-# Z
-. /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
