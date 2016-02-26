@@ -23,9 +23,6 @@ for g in 'gut' 'god' 'giy' 'god' 'goat' '🐐' 'gt'
 }
 alias got='afplay /usr/local/etc/got.mp3 & ; cat /usr/local/etc/got.txt; git'
 
-# Node
-alias eslint-local="./node_modules/eslint/bin/eslint.js"
-
 # Android
 alias adbpicture='PIC="/sdcard/DCIM/Camera/IMG_$(date +"%Y%m%d")*" ; adb shell "input tap 540 1720" && sleep 1.5s && adb shell "ls -d $(echo $PIC)" | tr "\r" " " | xargs -n1 adb pull && adb shell "rm $(echo $PIC)"'
 

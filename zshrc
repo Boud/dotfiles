@@ -6,6 +6,9 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git npm node brew gulp ktst)
 source $ZSH/oh-my-zsh.sh
 
+# iTerm2 Shell Integration
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
 # -------------    PATH VARIABLE  ----------------
 # Coreutils binaries
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
@@ -21,8 +24,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # NVM
 export NVM_DIR="/Users/yadomi/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 export NODE_ENV="development"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Android SDK
 export PATH=$PATH:$HOME/.opt/android-sdk/tools
@@ -48,8 +51,3 @@ export DOCKER_MACHINE_NAME="default"
 # ------------------ ALIAS -----------------------
 source "$HOME/.scripts/my.alias"
 source "$HOME/.scripts/krashstudio.alias"
-
-test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
-
-# added by travis gem
-[ -f /Users/yadomi/.travis/travis.sh ] && source /Users/yadomi/.travis/travis.sh
