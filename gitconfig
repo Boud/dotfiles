@@ -52,7 +52,7 @@
 	smudge = git-lfs smudge %f
 	required = true
 [pager]
-	diff = diff-so-fancy
+	# diff = diff-so-fancy
 	show = diff-so-fancy
 [color "diff-highlight"]
 	oldNormal = red bold
