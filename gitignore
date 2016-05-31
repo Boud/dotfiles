@@ -8,3 +8,5 @@ Icon
 
 *.sublime-workspace
 *.sublime-project
+
+scripts/generator.js
