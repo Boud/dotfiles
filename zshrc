@@ -6,6 +6,9 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git npm node brew gulp ktst z)
 source $ZSH/oh-my-zsh.sh
 
+# Pass Completion
+source /usr/local/etc/bash_completion.d/password-store
+
 # iTerm2 Shell Integration
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
