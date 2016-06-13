@@ -3,11 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="eastwood"
 CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="true"
-plugins=(git npm node brew gulp ktst z)
+plugins=(git npm node brew ktst z pass)
 source $ZSH/oh-my-zsh.sh
-
-# Pass Completion
-source /usr/local/etc/bash_completion.d/password-store
 
 # iTerm2 Shell Integration
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
