@@ -38,7 +38,7 @@ function pushbullet() {
 
 # Countdown to an hour
 function countdown() {
-  S=$(expr $(date -d $1 +"%s") - $(date +"%s")) && for (( i = $S; i > 0; i-- )); do echo "$i"; sleep 1; done ; $@
+  S=$(expr $(date -d $1 +"%s") - $(date +"%s")) && for (( i = $S; i > 0; i-- )); do echo "$i"; sleep 1; done
 }
 
 # Sublime Text
