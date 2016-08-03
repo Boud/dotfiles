@@ -4,7 +4,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Source Z
-. $(brew --prefix z)/etc/profile.d/z.sh
+source $(brew --prefix z)/etc/profile.d/z.sh
 
 # Coreutils binaries
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH

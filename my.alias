@@ -7,9 +7,11 @@ alias countfiles='find * -maxdepth 1 -type d -not -path '\''*/\.*'\'' |  while r
 
 # Unwated alias
 unalias rm
+unalias gd
 
 # Git Alias Overide
 alias gs='git status'
+alias gd='git diff'
 alias gl='git lg'
 alias gds='git diff --staged'
 
