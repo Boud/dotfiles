@@ -13,7 +13,7 @@ unalias gl
 # Git Alias Overide
 alias gs='git status'
 alias gd='git diff'
-alias gl='git lg'
+alias gl='git lg --reverse --color=always | less +G'
 alias gds='git diff --staged'
 
 for g in 'gut' 'god' 'giy' 'god' 'goat' '🐐' 'gt'
