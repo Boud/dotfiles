@@ -17,6 +17,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # NVM
 export NVM_DIR="/Users/yadomi/.nvm"
+ [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+export NODE_ENV="development"
 
 # Personal executable scripts
 export PATH="$PATH:$HOME/.scripts/bin"
