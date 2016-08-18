@@ -12,6 +12,9 @@ export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 # Homebrew binaries
 export PATH=$HOME/bin:/usr/local/sbin:$PATH
 
+# Android
+export PATH="$PATH:$HOME/.opt/android-sdk/platform-tools"
+
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin"
 
