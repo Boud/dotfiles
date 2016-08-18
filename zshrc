@@ -17,6 +17,7 @@ export PATH="$PATH:$HOME/.opt/android-sdk/platform-tools"
 
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin"
+source ~/.rvm/scripts/rvm
 
 # NVM
 export NVM_DIR="/Users/yadomi/.nvm"
