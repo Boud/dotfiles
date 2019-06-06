@@ -1,5 +1,7 @@
 # Yadomi's dotfiles
 
 ```
-sh install.sh
+git clone git@github.com:yadomi/dotfiles.git .dotfiles
+cd .dotfiles
+./install.sh
 ```

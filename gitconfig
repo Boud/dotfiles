@@ -1,60 +1,66 @@
 [user]
 	name = Felix Yadomi
-	email = dev.yadomi@gmail.com
+	email = felix.yadomi@gmail.com
+	signingkey = 3148A19912ECB15F
 [core]
 	excludesfile = /Users/yadomi/.dotfiles/gitignore
-	editor = subl -w -n
+	editor = vim
 	pager = less
 	autocrlf = input
 	whitespace = cr-at-eol
 [alias]
-
 	# Enchenhancement
-	lg = log --abbrev-commit --pretty=tformat:'%Cred%h%Creset %C(yellow)%an%Creset %C(green)%ad%Creset %s %C(auto)%d%Creset%C(bold blue) (%ar) %Creset' --date=short
-  cp = cherry-pick
+	lg = log --abbrev-commit --pretty=tformat:'%Cred%h%Creset %Cblue%G?%Creset %C(yellow)%an%Creset %C(green)%ad%Creset %s %C(auto)%d%Creset%C(bold blue) (%ar) %Creset' --date=short
+	cp = cherry-pick
+	grep = grep --break --heading --line-number
 
 	# Features
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 	undo="reset --soft HEAD^"
-	pr="!pr() { hub pull-request $@ ;}; pr"
-	amend= 'commit --amend'
-	when-merged='git-when-merged'
-	oldest-ancestor = !zsh -c 'diff -u <(git rev-list --first-parent \"${1:-master}\") <(git rev-list --first-parent \"${2:-HEAD}\") | sed -ne \"s/^ //p\" | head -1' -
-  hotfix = "!hf() { git checkout preprod && git pull && git branch -d hotfix/$@ && git checkout -b hotfix/$@ ; }; hf"
+	hotfix = "!hf() { git checkout dev && git pull && git branch -d hotfix/$@ && git checkout -b hotfix/$@ ; }; hf"
+	append-to-last="!atl() { PREVIOUS_MSG=$(git log --format=%B -n 1 HEAD) && git undo && git comit -am \"$PREVIOUS_MSG\" ;}; atl"
+	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+	wip = "!wip() { git commit -am WIP --no-verify --no-gpg-sign ;}; wip"
+	on-current-branch = rev-parse --abbrev-ref HEAD
 
-  # TYPOS
-  comit='commit'
-  comi='commit'
-  chekcout='checkout'
-  chekout='checkout'
-  pish='push'
-  posh='push'
-  poush='push'
-  rest='reset'
+	# Typos
+	comit='commit'
+	comi='commit'
+	chekcout='checkout'
+	chekout='checkout'
+	pish='push'
+	posh='push'
+	poush='push'
+	rest='reset'
 
 [color]
 	diff = auto
 	status = auto
 	branch = auto
+
 [push]
 	default = simple
+
 [status]
 	showUntrackedFiles = all
+
 [color "branch"]
 	upstream = cyan
-[init]
-	templatedir = /Users/yadomi/.git-templates
+
 [help]
 	autocorrect = 1
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
-[pager]
-	diff = "diff-so-fancy | less -RFX"
-	show = diff-so-fancy
+
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+
+[rerere]
+	enabled = true
+
+[gpg]
+	program = gpg
+
+[grep]
+	extendedRegexp = true
