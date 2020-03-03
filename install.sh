@@ -1,8 +1,10 @@
 #! /usr/bin/env bash
 
-ROOT=$(dirname "$(readlink -f "$0")")
+ROOT=$(readlink -f $(dirname "$0"))
 
-ln -s $ROOT/prompt_yadomi_setup ~/.zprezto/modules/prompt/functions/prompt_yadomi_setup
-ln -s $ROOT/gitconfig ~/.gitconfig
-ln -s $ROOT/zpreztorc ~/.zpreztorc
-ln -s $ROOT/zshrc ~/.zshrc
+# git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+# ln -s $ROOT/.zprezto/modules/prompt/functions/prompt_yadomi_setup .zprezto/modules/prompt/functions/
+ln -s $ROOT/.gitconfig ~/
+# ln -s $ROOT/.zpreztorc ~/
+# ln -s $ROOT/.zshrc ~/

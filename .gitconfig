@@ -1,7 +1,7 @@
 [user]
 	name = Felix Yadomi
 	email = felix.yadomi@gmail.com
-	signingkey = 3148A19912ECB15F
+	signingkey = 9533883DC05E238E
 [core]
 	excludesfile = /Users/yadomi/.dotfiles/gitignore
 	editor = vim
@@ -19,7 +19,7 @@
 	undo="reset --soft HEAD^"
 	hotfix = "!hf() { git checkout dev && git pull && git branch -d hotfix/$@ && git checkout -b hotfix/$@ ; }; hf"
 	append-to-last="!atl() { PREVIOUS_MSG=$(git log --format=%B -n 1 HEAD) && git undo && git comit -am \"$PREVIOUS_MSG\" ;}; atl"
-	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+	recent = for-each-ref --count=50 --sort=-committerdate refs/heads/ --format="%(refname:short)"
 	wip = "!wip() { git commit -am WIP --no-verify --no-gpg-sign ;}; wip"
 	on-current-branch = rev-parse --abbrev-ref HEAD
 
@@ -64,3 +64,9 @@
 
 [grep]
 	extendedRegexp = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
