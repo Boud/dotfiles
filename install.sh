@@ -14,11 +14,14 @@ ln -sf $ROOT/zprezto/modules/prompt/functions/prompt_yadomi_setup $PREZTO_DIR/mo
 ln -sf $ROOT/zpreztorc ~/.zpreztorc
 ln -sf $ROOT/zshrc ~/.zshrc
 
-# setupt git
+# setup git
 ln -sf $ROOT/gitconfig ~/.gitconfig
 
+# setup tmux
+ln -sf $ROOT/tmux.conf ~/.tmux.conf
+
 # setup private helpers
-touch ~/dotfiles/private/99-private.sh
+touch ~/dotfiles/zsh/private/99-private.sh
 
 # set shell to zsh
 chsh -s /bin/zsh
