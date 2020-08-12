@@ -3,7 +3,7 @@ setopt alwaystoend
 
 source ~/.zprezto/init.zsh
 
-source ~/dotfiles/00-alias.sh
-source ~/dotfiles/05-git.sh
-source ~/dotfiles/10-variables.sh
-source ~/dotfiles/private/99-private.sh
+source ~/dotfiles/zsh/00-alias.sh
+source ~/dotfiles/zsh/05-git.sh
+source ~/dotfiles/zsh/10-variables.sh
+source ~/dotfiles/zsh/private/99-private.sh
