@@ -20,6 +20,9 @@ ln -sf $ROOT/gitconfig ~/.gitconfig
 # setup tmux
 ln -sf $ROOT/tmux.conf ~/.tmux.conf
 
+# setup vim
+ln -sf $ROOT/vimrc ~/.vimrc
+
 # setup private helpers
 touch ~/dotfiles/zsh/private/99-private.sh
 
