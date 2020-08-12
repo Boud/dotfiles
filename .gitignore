@@ -10,4 +10,4 @@ Icon
 *.sublime-project
 .directory
 
-private/*
+zsh/private/*

@@ -1,8 +1,9 @@
 #! /usr/bin/env zsh
 
-ROOT=$(readlink -f $(dirname "$0"))
+ROOT="$HOME/dotfiles"
 PREZTO_DIR="${ZDOTDIR:-$HOME}/.zprezto"
 
+echo $PREZTO_DIR
 if [ ! -d $PREZTO_DIR ]; then
     git clone --recursive https://github.com/sorin-ionescu/prezto.git $PREZTO_DIR
 else
