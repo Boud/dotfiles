@@ -8,8 +8,8 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'utility' \
   'completion' \
-  'prompt' \
-  'editor'
+  'editor' \
+  'prompt'
 
 zstyle ':prezto:module:prompt' theme 'yadomi'
 zstyle ':prezto:module:git:info:context:subcontext' format 'string'

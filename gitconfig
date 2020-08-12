@@ -3,7 +3,7 @@
 	email = felix.yadomi@gmail.com
 	signingkey = 9533883DC05E238E
 [core]
-	excludesfile = /Users/yadomi/.dotfiles/gitignore
+	excludesfile = ~/dotfiles/gitignore
 	editor = vim
 	pager = less
 	autocrlf = input
@@ -17,11 +17,8 @@
 	# Features
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 	undo="reset --soft HEAD^"
-	hotfix = "!hf() { git checkout dev && git pull && git branch -d hotfix/$@ && git checkout -b hotfix/$@ ; }; hf"
-	append-to-last="!atl() { PREVIOUS_MSG=$(git log --format=%B -n 1 HEAD) && git undo && git comit -am \"$PREVIOUS_MSG\" ;}; atl"
 	recent = for-each-ref --count=50 --sort=-committerdate refs/heads/ --format="%(refname:short)"
 	wip = "!wip() { git commit -am WIP --no-verify --no-gpg-sign ;}; wip"
-	on-current-branch = rev-parse --abbrev-ref HEAD
 
 	# Typos
 	comit='commit'
@@ -49,12 +46,6 @@
 
 [help]
 	autocorrect = 1
-
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
 
 [rerere]
 	enabled = true

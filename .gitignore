@@ -8,3 +8,4 @@ Icon
 
 *.sublime-workspace
 *.sublime-project
+.directory

@@ -12,11 +12,6 @@ alias qr='qrcode-terminal'
 alias docker-rmi='docker rmi -f $(docker images -q -f "dangling=true")'
 alias rmnodemodules='find . -type d -name "node_modules" -exec rm -rf {} \;'
 
-# Unwanted alias set
-unalias rm
-unalias gd
-unalias gl
-
 # Git Alias Overide
 alias gs='git status'
 alias gd='git diff'
@@ -28,8 +23,12 @@ for g in 'gut' 'god' 'giy' 'god' '🐐' 'gt'
   alias $g='git'
 }
 
-# Coreutils binaries
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin" 
+# Coreutils binaries for macOS
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+fi
+
+# Export some binaries that could be in ~/.bin
 export PATH=$PATH:"$HOME/.bin/"
 
 # GPG
